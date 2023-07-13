@@ -3,7 +3,12 @@ import { Modal } from "./Modal";
 
 export const Address = ({uniqueData}) => {
     const [modal,setModal] = useState(false);
-    const [rsvp,setRsvp] = useState(false)
+    const [rsvp,setRsvp] = useState(false);
+    let  currentDate = new Date();
+    let date = new Date(uniqueData.eventEndTime);
+
+    let isPassed = (date<currentDate);
+    console.log(isPassed)
 
     const toggleModal = () => {
         setModal(!modal)
@@ -33,8 +38,10 @@ export const Address = ({uniqueData}) => {
                 })
             }
             {
-                rsvp ? <button className="rounded-md p-3 bg-button_bg text-secondary_bg">Already RSVP</button>
-                :
+                !isPassed &&  rsvp && <button className="rounded-md p-3 bg-button_bg text-secondary_bg">Already RSVP</button>
+            }
+            {
+               !isPassed &&  !rsvp &&
                 <button onClick = {() => toggleModal()}
                 className="rounded-md p-3 bg-button_bg text-secondary_bg">RSVP</button>
             }
