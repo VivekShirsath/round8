@@ -20,7 +20,7 @@ export const Modal = ({isPaid,uniqueData,toggleModal,toggleRsvp}) => {
         <div className="flex justify-center items-center min-h-screen
          bg-primary_bg/[.30] fixed top-0 left-0 right-0 z-20" > 
           <form className="  p-3
-        flex flex-col gap-3 justify-center items-center rounded-md shadow-md shadow-primary_bg  z-30 w-3/4  bg-secondary_bg">
+        flex flex-col gap-3 justify-center items-center rounded-md shadow-md shadow-primary_bg  z-30   bg-secondary_bg">
           <h2>Complete your RSVP</h2>  
           <h3>Fill In Your Information</h3>
             <div>
