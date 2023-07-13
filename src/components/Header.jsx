@@ -9,7 +9,7 @@ export const Header = () => {
     const handleInput = (e) => {
         setQuery(e.target.value)
         const unique = initialData.meetups.filter(({title
-        }) => title.toLowerCase().includes(query.toLowerCase()));
+        }) => title.toLowerCase().includes(e.target.value.toLowerCase()));
         console.log(unique)
         setData({meetups:unique})
         if(e.target.value === ""){
