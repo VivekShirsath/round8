@@ -33,10 +33,10 @@ export const Address = ({uniqueData}) => {
                 })
             }
             {
-                rsvp ? <button className="rounded-md p-3 bg-button_bg">Already RSVP</button>
+                rsvp ? <button className="rounded-md p-3 bg-button_bg text-secondary_bg">Already RSVP</button>
                 :
                 <button onClick = {() => toggleModal()}
-                className="rounded-md p-3 bg-button_bg">RSVP</button>
+                className="rounded-md p-3 bg-button_bg text-secondary_bg">RSVP</button>
             }
            </div>
            {

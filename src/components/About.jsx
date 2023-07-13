@@ -16,7 +16,7 @@ export const About = ({uniqueData}) => {
             </div>
             <h2>Event Tags</h2>
             {
-                uniqueData.eventTags.map((val) => <button>{val}</button>)
+                uniqueData.eventTags.map((val) => <button className="rounded-md p-3 bg-button_bg w-fit p-3 mb-3 text-secondary_bg">{val}</button>)
             }
         </div>
     )
