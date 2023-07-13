@@ -43,7 +43,7 @@ export const Modal = ({isPaid,uniqueData,toggleModal,toggleRsvp}) => {
                 isPaid && <h4>You have to make the payment at the venue</h4>
             }
 
-                <button onClick = {(e) => handleSubmit(e)}>RSVP</button>
+                <button className="rounded-md p-3 bg-button_bg text-secondary_bg" onClick = {(e) => handleSubmit(e)}>RSVP</button>
                
             </form>  
 
