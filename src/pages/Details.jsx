@@ -14,7 +14,7 @@ export const Details = () => {
     return(
         <div>
          <Header/>
-         <div className="flex justify-between">
+         <div className="flex justify-around">
             <About uniqueData={uniqueData}/>
             <Address uniqueData={uniqueData}/>
          </div>
